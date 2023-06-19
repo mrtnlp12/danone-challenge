@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+<main class="container">
+  <h1>Productos</h1>
+  <app-search (searchEvent)="search($event)"></app-search>
+
+  <article class="item" *ngFor="let product of products">
+    <img [src]="product.imageUrl" [alt]="product.description" />
+    <div class="item_body">
+      <h2>{{ product.name }}</h2>
+      <p>{{ product.description }}</p>
+    </div>
+    <button [routerLink]="['/products', product.sys.id]">Ver detalles</button>
+  </article>
+</main>

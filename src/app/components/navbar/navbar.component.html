@@ -1,0 +1,40 @@
+<nav class="navbar">
+  <div class="nav_logo">
+    <a routerLink="/home">
+      <img
+        src="https://s3-alpha-sig.figma.com/img/353f/a376/4169e4c21c3cf94209a3279d0eb484b9?Expires=1687737600&Signature=EOsZjEANapW-5Ohs4oaZqkYCJrT9h82wmfcPX6yN2LZmLj1ZvEtMqo4TScp4RDLtMcD~NSkpxW5uAcynPJwdvKr-ZaRxx353mwX4nH-ALNvKmjmZw6G-W3wtRM6OF47ptuyMSs7lahPkWHhQ~9CjJVvKzFI7Fqk1Kqumw5Fc7lLlhp1RUXwku~5JM8FR56ylSOLmDJqmHSh39z6Kcfat-UxNEQ1nYXPyYNqUl-syxCO0C0fatIM0oEGhgr52IDsy8py5vooAscproO5NjW1INcxtxnN68ja0QZc-WUKdPIIwOOeVTYkbN7dA7GS7vDohxjXnRDFURcmTZHJnRm4EnA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        alt=""
+      />
+    </a>
+  </div>
+  <button class="hamburger hamburger--squeeze" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+  <ul class="nav_menu_desktop">
+    <li><a routerLink="/home" routerLinkActive="active">Inicio</a></li>
+    <li>
+      <a
+        routerLink="/products"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Productos</a
+      >
+    </li>
+    <li>
+      <a routerLink="/calorias-diarias" routerLinkActive="active"
+        >Calorias Diarias</a
+      >
+    </li>
+    <li><a routerLink="/usuario" routerLinkActive="active">Usuario</a></li>
+  </ul>
+</nav>
+
+<ul class="nav_menu_mobile">
+  <li><a routerLink="/home">Inicio</a></li>
+  <li><a routerLink="/products">Productos</a></li>
+  <li><a routerLink="/calorias-diarias">Calorias Diarias</a></li>
+  <li><a routerLink="/usuario">Usuario</a></li>
+</ul>

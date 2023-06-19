@@ -1,0 +1,93 @@
+.logo {
+  width: 100%;
+  padding: .5rem .5rem 2rem;
+  background-color: #E8F3FF;
+  grid-area: logo;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "logo logo logo logo"
+                       "first_section first_section first_section first_section"
+                       "second_section second_section second_section second_section"
+                       "third_section third_section third_section third_section"
+                       "fourth_section fourth_section fourth_section fourth_section"
+                       ;
+}
+
+img {
+  width: 100%;
+  position: relative;
+  height: auto;
+  object-fit: cover;
+}
+
+.info img:hover {
+  transform: scale(1.01);
+  transition: transform .3s;
+  z-index: 1;
+}
+
+h1 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #324BAA;
+}
+
+
+
+p {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: lighter ;
+}
+
+
+.first_section {
+  grid-area: first_section;
+}
+
+.second_section {
+  grid-area: second_section;
+}
+
+.third_section {
+  grid-area: third_section;
+}
+
+.fourth_section {
+  grid-area: fourth_section;
+}
+
+.info {
+  width: 100%;
+  padding: 1rem .5rem 2rem;
+  background-color: white;
+}
+
+.info_title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 980px) {
+  main {
+    row-gap: 10px;
+    grid-template-areas: "logo logo logo logo"
+                         "first_section first_section second_section second_section"
+                         "third_section third_section fourth_section fourth_section"
+                         ;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo img{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+

@@ -1,0 +1,13 @@
+<!-- component to show product´s details -->
+<app-navbar></app-navbar>
+<div class="product_container">
+  <!-- back button -->
+  <button class="back_button" routerLink="/products">Regresar</button>
+  <div class="image_container">
+    <img [src]="product?.imageUrl" class="" alt="product image" />
+  </div>
+  <div class="product_info">
+    <h1>{{ product?.name }}</h1>
+    <p>{{ product?.description }}</p>
+  </div>
+</div>

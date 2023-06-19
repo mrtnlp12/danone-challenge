@@ -1,26 +1,35 @@
-# DanoneChallenge
+# Danone Challenge (landing page)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+## Description
 
-## Development server
+This project is a landing page to promote the new range of organic products from DANONE
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Requirements
 
-## Code scaffolding
+- Node.js (recommended version: 18.x or higher)
+- Angular CLI (version 15.2.4)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## How to run it
+
+1. **Dependency Installation:**
+
+   - Open a terminal in the root directory of the project.
+   - Run the following command to install the project dependencies:
+     ```
+     npm install
+     ```
+
+2. **Local execution:**
+   - Make sure you are in the root directory of the project in the terminal.
+   - Run the following command to start the development server:
+     ```
+     ng serve
+     ```
+   - Open your web browser and go to `http://localhost:4200`. The app will automatically load and update in real time when you make changes to the source code.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
 
