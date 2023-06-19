@@ -1,5 +1,7 @@
 # Danone Challenge (landing page)
 
+[app deployed in vercel](https://danone-challenge.vercel.app/home)
+
 ## Description
 
 This project is a landing page to promote the new range of organic products from DANONE
