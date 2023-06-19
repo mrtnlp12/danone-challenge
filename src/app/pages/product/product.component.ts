@@ -23,6 +23,11 @@ export class ProductComponent implements OnInit {
               name
               description
               imageUrl
+              protein
+              fat
+              carbohydrates
+              ingredients
+              comesFromOrganicFarming
             }
           }
         `,

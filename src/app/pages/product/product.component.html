@@ -8,6 +8,26 @@
   </div>
   <div class="product_info">
     <h1>{{ product?.name }}</h1>
-    <p>{{ product?.description }}</p>
+    <p>Descripcion: {{ product?.description }}</p>
+    <p>Proteinas: {{ product?.protein }}</p>
+    <p>Grasas: {{ product?.fat }}</p>
+    <p>Carbohidratos: {{ product?.carbohydrates }}</p>
+    <p>Ingredientes: {{ product.ingredients }}</p>
+    <!-- badge -->
+    <div class="badge_container">
+      <span
+        class="badge"
+        [ngClass]="{
+          'badge--green': product?.comesFromOrganicFarming,
+          'badge--red': !product?.comesFromOrganicFarming
+        }"
+      >
+        {{
+          product?.comesFromOrganicFarming
+            ? "Viene de granjas organicas"
+            : "No viene de granjas organicas"
+        }}
+      </span>
+    </div>
   </div>
 </div>

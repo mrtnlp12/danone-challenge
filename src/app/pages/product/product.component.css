@@ -18,7 +18,8 @@ img {
 }
 
 .product_info p {
-  text-align: center;
+  text-align: left;
+  margin-bottom: .4rem;
 }
 
 .back_button {
@@ -34,6 +35,24 @@ img {
   color: #fff;
   text-align: center;
   transition: background-color 0.3s ease-in-out;
+}
+
+.badge {
+  margin-right: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  background-color: #324BAA;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.badge--green {
+  background-color: #2ECC71;
+}
+
+.badge--red {
+  background-color: #E74C3C;
 }
 
 .back_button:hover {
